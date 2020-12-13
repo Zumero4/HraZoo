@@ -3,4 +3,4 @@ project(HraZoo)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(HraZoo main.cpp)
+add_executable(HraZoo main.cpp Hrdina.cpp Hrdina.h)
