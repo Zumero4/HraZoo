@@ -19,3 +19,7 @@ void Lobby::print() {
         std::cout<<"Nic tu neni."<<std::endl;
     }
 }
+//na nic
+void Lobby::getProtivnik() {
+    return m_protivnik->printInfo();
+}

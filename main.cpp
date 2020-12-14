@@ -3,7 +3,11 @@
 #include "Hrdina.h"
 #include "Lobby.h"
 #include "Jeskyne.h"
-
+#include "Interakce.h"
+#include "Bojuj.h"
+#include "Mistnost.h"
+#include "Predmet.h"
+#include "Protivnik.h"
 
 int main() {
 
@@ -19,10 +23,17 @@ int main() {
        mistnost->print();
    }
 
+   Protivnik* vlk = Protivnik::createProtivnik("vlk");
+   Protivnik* medved = Protivnik::createProtivnik("medved");
+   Protivnik* drak = Protivnik::createProtivnik("drak");
+
     Hrdina* david = Hrdina::createHrdina("David","elf");
     david->printInfo();
 
-
+    david->naucInterakci(new Bojuj("souboj"));
+    david->interaguj(vlk);
+    david->interaguj(medved);
+    david->interaguj(drak);
 
 
 

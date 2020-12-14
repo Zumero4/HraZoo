@@ -11,6 +11,7 @@ class Lobby: public Mistnost {
 public:
     Lobby(std::string rasa);
     void print();
+    void getProtivnik();
 };
 
 

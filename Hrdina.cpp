@@ -3,7 +3,7 @@
 //
 
 #include "Hrdina.h"
-
+#include "Interakce.h"
 Hrdina::Hrdina(std::string jmeno,int zivoty, int sila, std::string rasa){
     m_jmeno = jmeno;
     m_zivoty = zivoty;
@@ -18,6 +18,14 @@ void Hrdina::printInfo(){
     std::cout << "zbran: " << "nic" << "\n";    //dodelat zbran brneni na vypis
     std::cout << "brneni: " << " nic" << std::endl;
 }
+
+int Hrdina::getZivoty(){
+        return m_zivoty;
+}
+int Hrdina::getSila(){
+        return m_sila;
+    }
+
 /*
 int Hrdina::getZivoty(){
     if(m_brneni == nullptr){
@@ -59,5 +67,57 @@ Hrdina* Hrdina::createHrdina(std::string jmeno, std::string rasa) {
     return novyHrdina;
 }
 
+std::string Hrdina::getJmeno() {
+    return m_jmeno;
+}
 
+//Inventar
+
+void Hrdina::seberPredmet(Predmet* predmet){
+    m_predmety.push_back(predmet);
+}
+
+Predmet* Hrdina::getPredmet(int index){
+    if((index >= 0) && (index < m_predmety.size())){
+        return m_predmety.at(index);
+    }else{
+        return nullptr;
+    }
+}
+
+void Hrdina::odeberPredmet(int index){
+    if((index > 0) && (index < m_predmety.size())){
+        m_predmety.erase(m_predmety.begin()+index);
+    }
+}
+
+//Interakce
+
+void Hrdina::interaguj(Protivnik* protivnik) {
+    vypisInterakce();
+    int rozhodnuti = ziskejRozhodnuti();
+    m_interakce.at(rozhodnuti)->interaguj(this, protivnik);
+}
+
+void Hrdina::naucInterakci(Interakce* interakce) {
+    m_interakce.push_back(interakce);
+}
+
+void Hrdina::vypisInterakce() {
+    for (unsigned int i=0; i<m_interakce.size(); i++){
+        std::cout << "(" << i << ")" << m_interakce.at(i)->getPopis() << std::endl;
+    }
+}
+
+int Hrdina::ziskejRozhodnuti() {
+    unsigned int rozhodnuti = 0;
+    std::cout << "Zadej cislo rozhodnuti, ktere chces provet: ";
+    std::cin >> rozhodnuti;
+
+    if (rozhodnuti<m_interakce.size()){
+        return rozhodnuti;
+    }else{
+        return ziskejRozhodnuti();
+    }
+}
 

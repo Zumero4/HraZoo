@@ -7,7 +7,7 @@
   </component>
   <component name="CMakeSettings">
     <configurations>
-      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" ENABLED="true" />
     </configurations>
   </component>
   <component name="ChangeListManager">
@@ -34,19 +34,20 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HraZoo" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="HraZoo" TARGET_NAME="HraZoo" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="HraZoo" RUN_TARGET_NAME="HraZoo">
+    <configuration name="HraZoo" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="HraZoo" TARGET_NAME="HraZoo" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="HraZoo" RUN_TARGET_NAME="HraZoo">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -62,40 +63,24 @@
       <updated>1607862856969</updated>
       <workItem from="1607862858415" duration="5394000" />
       <workItem from="1607869507853" duration="12263000" />
+      <workItem from="1607952368491" duration="693000" />
+      <workItem from="1607954111021" duration="1094000" />
+      <workItem from="1607967856776" duration="10008000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="1048" y="348" key="FileChooserDialogImpl" timestamp="1607868376668">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1048" y="348" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607868376668" />
-    <state width="1209" height="222" key="GridCell.Tab.0.bottom" timestamp="1607909274014">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1209" height="222" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607909274014" />
-    <state width="1209" height="222" key="GridCell.Tab.0.center" timestamp="1607909274014">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1209" height="222" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607909274014" />
-    <state width="1209" height="222" key="GridCell.Tab.0.left" timestamp="1607909274014">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1209" height="222" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607909274014" />
-    <state width="1209" height="222" key="GridCell.Tab.0.right" timestamp="1607909274014">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1209" height="222" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607909274014" />
-    <state x="795" y="190" width="913" height="845" key="dock-window-1" timestamp="1607904850228">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="795" y="190" width="913" height="845" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1607904850228" />
-    <state x="908" y="171" width="913" height="845" key="dock-window-2" timestamp="1607904850228">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="908" y="171" width="913" height="845" key="dock-window-2/0.0.1920.1040@0.0.1920.1040" timestamp="1607904850228" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
