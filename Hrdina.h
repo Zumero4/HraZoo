@@ -7,7 +7,7 @@
 
 
 class Hrdina {
-protected:
+
     std::string m_jmeno;
     int m_zivoty;
     int m_sila;
@@ -17,13 +17,16 @@ protected:
 
 public:
 
+    static Hrdina*  createHrdina(std::string jmeno, std::string rasa);
+
     void printInfo();
-    int getZivoty();
-    int getSila();
+   /* int getZivoty();
+    int getSila();*/
     void uberZivoty(int oKolik);
 
-Hrdina* createHrdina(std::string jmeno, std::string rasa);
 
+
+    ~Hrdina();
 
 
 };

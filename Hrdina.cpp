@@ -18,22 +18,23 @@ void Hrdina::printInfo(){
     std::cout << "zbran: " << "nic" << "\n";    //dodelat zbran brneni na vypis
     std::cout << "brneni: " << " nic" << std::endl;
 }
-
+/*
 int Hrdina::getZivoty(){
-   /* if(m_brneni == nullptr){
+    if(m_brneni == nullptr){
         return m_zivoty;
     }else{
         return m_zivoty  + Brneni->getBonusZivotu();
-    }*/
-}
+    }
+}*/
 
+/*
 int Hrdina::getSila(){
-  /*  if (m_zbran == nullptr){
+    if (m_zbran == nullptr){
         return m_sila;
     }else{
         return m_sila + Zbran->getBonusUtoku();
-    }*/
-}
+    }
+}*/
 
 void Hrdina::uberZivoty(int oKolik){
     m_zivoty -= oKolik;
@@ -57,4 +58,6 @@ Hrdina* Hrdina::createHrdina(std::string jmeno, std::string rasa) {
     }
     return novyHrdina;
 }
+
+
 
