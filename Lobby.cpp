@@ -8,6 +8,9 @@ Lobby::Lobby(std::string rasa):Mistnost(rasa){
 
 }
 
+/*Kazda mistnost jiny popis moznost nepritele a bude moznost obsahovat predmety
+ stejny princip jak nepritel(truhla, jidlo, zbran)
+ */
 void Lobby::print() {
     std::cout << " Toto je vstupni mistnost hradu. ";
     if (m_protivnik != nullptr){

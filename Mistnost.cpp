@@ -4,6 +4,8 @@
 
 #include "Mistnost.h"
 
+/*kdyz vkladam nepritele do mistnosti staci zadat rasu, a podle ni ma neprite vlastnosti
+  protivnik.cpp stejne jak u vytvareni hrdiny*/
 Mistnost::Mistnost(std::string rasa){
     if (rasa == " "){
         m_protivnik = nullptr;

@@ -7,6 +7,8 @@
 #include <iostream>
 #include "Protivnik.h"
 
+//abstraktni trida
+
 class Mistnost {
 protected:
     Protivnik* m_protivnik;
