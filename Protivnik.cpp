@@ -47,6 +47,6 @@ int Protivnik::getZivoty(){
 void Protivnik::uberZivoty(int oKolik){
     m_zivoty -= oKolik;
     if (m_zivoty <= 0){
-        std::cout << m_rasa << "  je mrtev. Muzes jit dal. \n" << std::endl;
+        std::cout << m_rasa << "  je mrtev. Muzes jit dal. " << std::endl;
     }
 }
