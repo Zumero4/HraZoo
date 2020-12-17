@@ -11,6 +11,7 @@ Bojuj::Bojuj(std::string popis):Interakce(popis){
 void Bojuj::interaguj(Hrdina* kdo, Protivnik* skym){
     std::cout <<"Boj! " << kdo->getJmeno() << " a " << skym->getRasa() << std::endl;
 
+
     while(skym->getZivoty()>0){
         skym->uberZivoty(kdo->getSila());
         kdo->uberZivoty(skym->getSila());

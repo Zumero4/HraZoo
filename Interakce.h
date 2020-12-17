@@ -6,7 +6,9 @@
 #define HRAZOO_INTERAKCE_H
 #include <iostream>
 #include "Hrdina.h"
-
+#include "Protivnik.h"
+#include "Mistnost.h"
+#include "Lobby.h"
 
 class Interakce {
     std::string m_popis;

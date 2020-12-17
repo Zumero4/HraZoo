@@ -44,11 +44,20 @@ int Hrdina::getSila(){
     }
 }*/
 
+
+int Hrdina::getPozice(){
+    return m_pozice;
+}
+
+int Hrdina::jitDal(){
+    m_pozice++;
+}
+
+
+
 void Hrdina::uberZivoty(int oKolik){
     m_zivoty -= oKolik;
-    /*if (m_zivoty <= 0){
-        std::cout << m_rasa << " " << m_jmeno << " je mrtev. \n" << "Konec hry!" << std::endl;
-    }*/
+
 }
 
 Hrdina* Hrdina::createHrdina(std::string jmeno, std::string rasa) {

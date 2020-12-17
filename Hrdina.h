@@ -6,13 +6,14 @@
 #define HRAZOO_HRDINA_H
 #include <vector>
 #include "Predmet.h"
-
+#include "Mistnost.h"
 #include "Protivnik.h"
 class Interakce;
 
 class Hrdina {
     std::vector <Predmet*> m_predmety;
     std::vector <Interakce*> m_interakce;
+    int m_pozice=0;
     std::string m_jmeno;
     int m_zivoty;
     int m_sila;
@@ -30,7 +31,8 @@ public:
     int getSila();
     void uberZivoty(int oKolik);
 
-
+    int getPozice();
+    int jitDal();
 
     void interaguj(Protivnik* protivnik);
     void naucInterakci(Interakce* interakce);

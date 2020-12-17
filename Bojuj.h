@@ -4,9 +4,8 @@
 
 #ifndef HRAZOO_BOJUJ_H
 #define HRAZOO_BOJUJ_H
-#include "Hrdina.h"
 #include "Interakce.h"
-#include "Protivnik.h"
+
 
 class Bojuj:public Interakce{
 public:
